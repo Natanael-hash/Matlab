@@ -1,0 +1,10 @@
+f=50;
+omega=2*pi*f;
+t=0:0.0001:0.1;
+Um=220;
+u=Um*sin(omega*t);
+y=Um*cos(omega*t);
+subplot(1,2,1),plot(t,u),
+xlabel('t'),ylabel('u')
+subplot(1,2,2),plot(t,y),
+xlabel('t'),ylabel('y');
